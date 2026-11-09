@@ -66,7 +66,7 @@ app.get("/api/youtube", async (req, res) => {
         });
     }
 });
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, "0.0.0.0", () => {
     console.log(`GORDO DOWNLOAD rodando na porta ${PORT}`);
